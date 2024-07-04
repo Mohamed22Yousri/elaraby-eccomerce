@@ -1,17 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <app-layout-vue>
+    <router-view />
+    <QuickView />
+  </app-layout-vue>
 </template>
 
+<script>
+import QuickView from "@/components/gloal/QuickView.vue";
+import AppLayoutVue from "./components/gloal/AppLayout.vue";
+export default {
+  components: {
+    AppLayoutVue,
+    QuickView,
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
