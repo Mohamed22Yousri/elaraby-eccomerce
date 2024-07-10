@@ -10,7 +10,6 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "homepage": "http://Mohamed22Yousri.github.io/elaraby-eccomerce",
     "@mdi/font": "^7.4.47",
     "axios": "^1.6.8",
     "core-js": "^3.8.3",
