@@ -11,8 +11,8 @@
   <NewProducts :products="newProducts" />
   <QualityFeature />
   <ProductsComponents
-    :products="mobilePhone"
-    title="Top Mobile"
+    :products="Furniture"
+    title="Top Furniture"
     titleColor="black"
   />
   <v-container>
@@ -77,7 +77,7 @@ export default {
     ...mapState(productsModule, [
       "flashDeals",
       "newProducts",
-      "mobilePhone",
+      "Furniture",
       "fragrances",
       "groceries",
     ]),

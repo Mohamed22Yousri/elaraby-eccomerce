@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "homepage": "http://Mohamed22Yousri.github.io/elaraby-eccomerce",
     "@mdi/font": "^7.4.47",
     "axios": "^1.6.8",
     "core-js": "^3.8.3",
+    "gh-pages": "^6.1.1",
     "mitt": "^3.0.1",
     "pinia": "^2.1.7",
     "swiper": "^8.4.7",

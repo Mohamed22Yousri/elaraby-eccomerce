@@ -4,7 +4,7 @@ export const productsModule = defineStore("productsModule", {
   state: () => ({
     flashDeals: [],
     newProducts: [],
-    mobilePhone: [],
+    Furniture: [],
     fragrances: [],
     groceries: [],
     categoryProducts: [],
@@ -48,8 +48,8 @@ export const productsModule = defineStore("productsModule", {
           this.newProducts = res.data.products.filter(
             (el) => el.category === "groceries"
           );
-          this.mobilePhone = res.data.products.filter(
-            (el) => el.category === "smartphones"
+          this.Furniture = res.data.products.filter(
+            (el) => el.category === "furniture"
           );
           this.fragrances = res.data.products.filter(
             (el) => el.category === "fragrances"
